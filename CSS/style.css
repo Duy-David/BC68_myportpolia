@@ -1,0 +1,318 @@
+/* header */
+header .nav-link{
+    position: relative;
+    margin: 0 20px;
+    /* color: white; */
+    transition: all .5s;
+}
+header .nav-item .nav-link.active{
+    color: green!important;
+
+}
+header .nav-item .active::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left :0;
+    width: 100%;
+    height: 3px;
+    background: green;
+}
+
+header .nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: green;
+    
+    transition: all .5s;
+    /* color: white; */
+}
+header .nav-link:hover::before{
+    width: 100%;
+    /* color: green; */
+}
+header .nav-link:hover {
+    color: green !important
+}
+
+/* carousel */
+.carousel-caption img{
+    height: 150px;
+    width: 150px;
+}
+.carousel .carousel-caption{
+    top: 0;
+    left:0;
+    background-color: rgb(39, 43, 54,0.5);
+    width: 100%;
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    /* top: 50%;
+    left: 50%;
+    /* Transgorm nhận giá tir5 âm cho 2chiều giúp đẩy ngược phần tử nhầ mục dích canh giửa phần tử*/
+/*     
+    transform: translate(-50%,-50%);
+    right: unset;
+    bottom: unset; */ 
+
+}
+    
+
+.carousel .carousel-indicators button{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    /* color: #35A22C; */
+}
+.carousel .carousel-indicators button.active{
+    background-color: #35A22C;
+}
+    
+.carousel-item h2{
+    font-size: 40px;
+} 
+/* project */
+.project_title h2{
+    font-size: 36px;
+    line-height: 48px;
+    font-weight: 600;
+}
+.project_title p {
+    line-height: 24px;
+}
+.project_content{
+    padding: 48px 0;
+}
+.project_content .nav-link.active{
+    background-color: green;
+    border-color: green;    
+}
+
+.project_content .nav-link{
+    color: black;
+    border: 1px solid black;
+    padding: 20px;
+/* }
+.project_content .nav-link:hover{
+    color: black;
+    border: 1px solid black; */
+}
+
+
+.project_content ul{
+   display: flex;
+   justify-content: center; }
+.col-4{
+    /* background-color: orange;
+    height: 14000px  ; */
+
+}
+.col-4 .project_item{
+    border-radius: 8px;
+    /* background-color: pink; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.col-4 .project_item img{
+    border-radius: 8px 8px 0 0;
+}
+
+.project_text{
+    /* padding-bottom: 20px; */
+    border: 1px solid transparent;
+    transition: all 0.5s;
+    border-top: none;
+    border-radius: 0 0 8px 8px;
+}
+/* .project_item{
+    transition: all 0.5s;
+} */
+.project_item:hover .project_text h3 {
+color: #35A22C;
+
+}
+.project_item:hover .project_text{
+    border-color: #35A22C;
+}
+
+.project_item .project_text p {
+padding-bottom: 16px;}
+/* available */
+.available{
+    background-image: url(../image/3.jpg);
+    background-position: top left;  
+    background-size: 100%;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    position: relative;
+}
+.available::before{
+    content: "";
+
+    background-color: rgba(7,10,12,.72);
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    /* z-index: 12; */
+}
+
+.available .available_content .availale_item{
+    background: rgba( 255, 255, 255, 0.1 );
+/* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+backdrop-filter: blur( 4px );
+/* -webkit-backdrop-filter: blur( 4px ); */
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.1 );
+    padding: 40px;
+    transition: all .5s;
+}
+.available .available_content .availale_item:hover{
+    background-color: black;
+    border: 1px solid white;
+}
+
+.available .available_content .availale_item i{
+    font-size: 70px;
+    color: #35A22C;
+}
+.available .available_content .availale_item h3{
+    margin: 15px 0;
+}
+
+
+/* award */
+.award{
+    position: relative;
+    /* padding: 70px 0; */
+}
+.award::before{
+    content: "";
+    background-image: url(../image/memphis_3.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 40% auto;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+
+
+.award_title h3{
+    line-height: 40px;
+    font-weight: 600;
+}
+.award_title p { 
+    font-size: 19px;
+    line-height: 24px;
+}
+
+
+.award_title{
+    border: 1px solid white;
+    border-radius: 12px;
+    /* box-shadow?: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.award .container{
+    padding: 60px 0;
+}
+
+.award_logo{
+    display: grid ;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    /* width: 20%; */
+    gap:15px;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+/* footer */
+.footer_content  .footer_logo a{
+    margin: 0 5px;
+}
+.footer_content  .footer_logo i{
+    width: 42px;    
+    height: 42px;   
+    line-height: 42px;  
+    color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: all 0.5s;
+    
+    
+}
+.footer_content  .footer_logo i:hover{
+    border-color: #35A22C;
+    color: #35A22C;
+}
+.footer_logo{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+}
+.footer_text
+{color: rgba(255, 255, 255, 0.2)}
+
+
+
+
+
+
+
+
+
+/* reposit wedsitete */
+
+/* Lưu ý đặc biệt cho repaszit wedsite: luôn để các giá trị max with lớn hơn ở trên các giá trị nhỏ hơn  do độ ưu tiên*/
+/* @media screen  and (max-width: 1200px) {
+    .carousel h2{
+        color: red;
+    }
+}
+@media screen  and (max-width: 576px) {
+   .project .project_item{
+        background-color: orange;
+    }
+
+
+    .carousel h2 {
+        color: orange;
+    }
+} */
+/* * Lưu ý đặc biệt cho repaszit wedsite: luôn để các giá trị min with nhỏ hơn ở trên các giá trị lớn hơn  do độ ưu tiên */
+/* @media screen and (min-width:576px) {
+    .carousel h2{
+        color: red;
+    }
+}
+@media screen and (min-width:992px) {
+    .carousel h2{
+        color: purple;
+    }
+} */
